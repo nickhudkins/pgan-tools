@@ -12,7 +12,7 @@ The installation process WILL complain about some peerDependencies:
   - opusscript@^0.0.1
   - uws@^0.12.0
 
-  They are NOT required for our use, as we do not use Voice / Video APIs of Discord
+They are NOT required for our use, as we do not use Voice / Video APIs of Discord
 
 You'll want to create a `.env` file to put some secrets (and config options) inside.
 
