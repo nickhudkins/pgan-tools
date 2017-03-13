@@ -6,6 +6,14 @@ _ **Note**: You REALLY should be running `nvm` so, go get that. If not, go insta
 
 `$ npm install`
 
+The installation process WILL complain about some peerDependencies:
+  - erlpack@hammerandchisel/erlpack#master
+  - node-opus@^0.2.0
+  - opusscript@^0.0.1
+  - uws@^0.12.0
+
+  They are NOT required for our use, as we do not use Voice / Video APIs of Discord
+
 You'll want to create a `.env` file to put some secrets (and config options) inside.
 
 ## You're Done!
