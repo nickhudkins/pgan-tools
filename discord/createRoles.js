@@ -45,7 +45,7 @@ module.exports = ({ dryRun }) => {
 
     console.log(chalk.blue(`Found ${chalk.bgBlue(' ' + chalk.white(possiblyExistingRoles.size) + ' ')} possibly existing roles...`))
     possiblyExistingRoles.forEach(({ name }) => {
-      console.log(`  ${name}`)
+      console.log(`  - ${name}`)
     })
 
     const absolutelyCreate = locationNames.filter((name) => {
