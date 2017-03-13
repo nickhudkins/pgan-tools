@@ -5,14 +5,14 @@ const cli = meow(`
   Usage
     $ pgan-tools <cmd>
   Commands
-    createRoles       This will create roles in Discord for all regions defined in the Master Google Spreadsheet
+    createRoles             This will create roles in Discord for all regions defined in the Master Google Spreadsheet
     listRoles               This will list existing roles in Discord
   Options
-    --dry, -d, --jk   This will perform a dry run of any tool. Shwew.
+    --dry-run, --jk, -d     This will perform a dry run of any tool. Shwew.
 `, {
   alias: {
-    'jk': 'dry',
-    'd': 'dry'
+    'jk': 'dry-run',
+    'd': 'dry-run'
   }
 })
 

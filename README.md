@@ -17,7 +17,7 @@ They are NOT required for our use, as we do not use Voice / Video APIs of Discor
 You'll want to create a `.env` file to put some secrets (and config options) inside.
 
 ## You're Done!
-You may now run things like `npm start -- createRoles --dry`.
+You may now run things like `npm start -- createRoles -d`.
 If you haven't worked with npm scripts in the past, you may be thinking: _Holy crap what are all of those `--`, well it's how we pass arguments to the script that `npm start` is executing. That's all.
 
 ### You're Curious?
