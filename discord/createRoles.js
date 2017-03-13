@@ -12,8 +12,8 @@ module.exports = ({ dryRun }) => {
     getMasterDatabase(),
   ])
   .then(([client, mdb]) => {
-    const createRole = dryRun ? mockCreateRole : client.createRole
     const pgan = client.guilds.first()
+    const createRole = dryRun ? mockCreateRole : (opts) => pgan.createRole(opts)
     console.log(chalk.bgYellow(chalk.black(`Generating Roles for [${pgan.name}]`)))
 
     if (!dryRun) {
