@@ -2,7 +2,7 @@ PGAN Tools
 ===
 
 ## Getting Started
-_ **Note**: You REALLY should be running `nvm` so, go get that. If not, go install NodeJS 7.6.0 or greater. It's not 1974._
+_**Note**: You REALLY should be running `nvm` so, go get that. If not, go install NodeJS 7.6.0 or greater. It's not 1974._
 
 `$ npm install`
 
