@@ -33,6 +33,7 @@ module.exports = ({ dryRun }) => {
       return locationNames.includes(name)
     })
     const possiblyExistingRoles = pgan.roles.filter(({ name }) => {
+      if (_existingNames.includes(name)) return false // We have already seen this.
       _maybeExistingNames.push(name.toLowerCase())
       return loweredLocationNames.includes(name.toLowerCase())
     })
