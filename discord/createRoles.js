@@ -6,7 +6,7 @@ function mockCreateRole(opts) {
   return Promise.resolve(opts)
 }
 
-module.exports = (dryRun = true) => {
+module.exports = ({ dryRun }) => {
   return Promise.all([
     getClient(),
     getMasterDatabase(),

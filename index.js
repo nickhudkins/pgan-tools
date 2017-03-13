@@ -16,7 +16,7 @@ const cli = meow(`
 })
 
 const cmd = cli.input[0].toLowerCase()
-const { dryRun = true } = cli.flags
+const { dryRun = false } = cli.flags
 let thingToDo
 
 switch (cmd) {
@@ -27,7 +27,7 @@ switch (cmd) {
     thingToDo = () => console.log('I did nothing. Just like you asked.')
 }
 
-thingToDo(dryRun)
+thingToDo({ dryRun })
   .then(() => {
     process.exit(0)
   })
